@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tyler Savin New</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="scripts/jquery.js"></script>
+<script>
+
+$(document).ready(function() {
+	
+	var windowHeight = $(window).height();
+	var windowWidth = $(window).width(); 
+	
+	
+	$('#linkmaker').click(function(){
+		$('#linkmade').val("<a href='" + $('#linkurl').val() + "' target='_blank'>" + $('#linktxt').val() + "</a>");
+		});
+		
+	$('#postbuilder').click(function(){
+		var postTitle = $('#title').val();
+		var postPub = $('#publication').val();
+		var postAuthor = $('#author').val();
+		var postContent = $('#thecontent').val();
+		$('#thediv').val("<h4>" + postTitle + "</h4><br />" + postAuthor + "<br />" + postContent + "<br /><hr />");
+		});
+	
+});
+
+</script>
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="inputs">
+<input type="text" id="title" placeholder="Title goes here" />
+<input type="text" id="publication" placeholder="Publication" />
+<input type="text" id="author" placeholder="Author" />
+<div id="makealink">
+<h3>Link Maker</h3>
+<input type="text" id="linkurl" placeholder="Link URL" />
+<input type="text" id="linktxt" placeholder="Link Text" />
+<button id="linkmaker">Make Link</button>
+<textarea id="linkmade"></textarea>
+</div><!--makealink-->
+<h3>Type Your Post Here</h3>
+<textarea id="thecontent"></textarea>
+<button id="postbuilder">Build Post</button>
+
+<textarea id="thediv">
+</textarea>
+</div><!--inputs--><div style="clear:both"></div>
+
+</div><!--content-->
+</body>
+</html>

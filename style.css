@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Theme Name: Tyler Savin Custom
+Author: Tyler Savin
+Author URI: http://www.tylersavin.com
+Description: Theme hand coded by Tyler Savin // Seattle, WA // 360 888 9585
+Version: 1
+License: @copy; 2013 Tyler Savin
+Tags: tyler,savin,custom,frontpage,minimal,jquery,easing,navigation
+Text Domain: tylersavin
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body,html,li,ul,hr,td,tr,input{
+	margin:0px;
+}
+
+::-webkit-scrollbar { 
+    display: none;
+}
+
+html,body{
+ 	font-family: 'Noto Serif', serif;
+	width:100%;
+	height:100%;
+	font-size:16px;
+	line-height:30px;
+}
+
+textarea{
+	width:498px;
+	height:325px;
+	border:1px solid #000;
+	margin:75px auto;
+	padding:5px;
+}
+
+#makealink{
+	width:500px;
+	margin:10px auto;
+	float:left;
+	padding:15px 0px;
+}
+
+#makealink input[type="text"]{
+	width:486px;
+}
+
+#linkmade{
+	width:498px;
+	height:75px;
+	overflow:scroll;
+	margin:10px auto;
+	border:1px solid #999;
+	float:left;
+}
+
+#inputs{
+	width:486px;
+	margin:10px auto;
+}
+
+input[type="text"]{
+	width:100%;
+	float:left;
+	padding:5px;
+	color:#111;
+	font-family: 'Noto Serif', serif;
+}
+
+#thecontent{
+	width:494px;
+	margin:15px 0;
+	height:350px;
+	overflow:scroll;
+	border:1px solid #ccc;
+}
+
+h3{
+	margin-bottom:5px;
+}
